@@ -25,6 +25,20 @@ namespace AddCalculatorTest
             Assert.That(result, Is.EqualTo(expected));   
         }
 
+        [Test]
+        [TestCase("1,2", 3)]
+        [TestCase("4,55,66,77", 202)]
+        [TestCase("1\n2,4", 7)]
+        [TestCase("1\n2,4\n6,7", 20)] 
+        public void Test_MultipleNumbers(string numbers, int expected)
+        {
+            //Act
+            int result = objAddCalculator.Add(numbers);
+
+            //Assert
+            Assert.That(result, Is.EqualTo(expected));
+        }
+
        
     }
 }

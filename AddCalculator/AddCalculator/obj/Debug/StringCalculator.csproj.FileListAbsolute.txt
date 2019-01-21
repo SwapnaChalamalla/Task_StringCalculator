@@ -22,3 +22,15 @@ C:\Users\lenovo\Documents\GitHub\StringCalculator\AddCalculator\AddCalculator\bi
 C:\Users\lenovo\Documents\GitHub\StringCalculator\AddCalculator\AddCalculator\obj\Debug\StringCalculator.csprojResolveAssemblyReference.cache
 C:\Users\lenovo\Documents\GitHub\StringCalculator\AddCalculator\AddCalculator\obj\Debug\AddCalculator.exe
 C:\Users\lenovo\Documents\GitHub\StringCalculator\AddCalculator\AddCalculator\obj\Debug\AddCalculator.pdb
+E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculator\bin\Debug\AddCalculator.exe.config
+E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculator\obj\Debug\AddCalculator.exe
+E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculator\obj\Debug\AddCalculator.pdb
+E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculator\bin\Debug\AddCalculator.exe
+E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculator\bin\Debug\AddCalculator.pdb
+E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculator\bin\Debug\MSTestHacks.dll
+E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculator\bin\Debug\Newtonsoft.Json.dll
+E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculator\bin\Debug\nunit.framework.dll
+E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculator\bin\Debug\MSTestHacks.pdb
+E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculator\bin\Debug\Newtonsoft.Json.xml
+E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculator\bin\Debug\nunit.framework.xml
+E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculator\obj\Debug\StringCalculator.csprojResolveAssemblyReference.cache
