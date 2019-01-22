@@ -61,9 +61,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Calculator\Calculator.csproj">
+    <ProjectReference Include="..\Calculator\StringCalculator.csproj">
       <Project>{aae58c75-0512-493d-a012-ada67e7ac660}</Project>
-      <Name>Calculator</Name>
+      <Name>StringCalculator</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

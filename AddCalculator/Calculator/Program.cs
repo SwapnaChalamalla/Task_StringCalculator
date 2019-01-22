@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Calculator;
+using StringCalculator;
 
-namespace Calculator
+namespace StringCalculator
 {
     public class Program
     {
@@ -15,7 +15,7 @@ namespace Calculator
             string numbers = Console.ReadLine();
 
             //Create object and invoke the add method
-            int result = new CalculatorForAdd().Add(numbers);
+            int result = new AddCalculator().Add(numbers);
 
             Console.WriteLine("The result is " + " " + result);
             Console.ReadLine();

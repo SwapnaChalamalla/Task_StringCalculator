@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Linq.Expressions;
 using System.Text.RegularExpressions;
 
-namespace Calculator
+namespace StringCalculator
 {
-    public class CalculatorForAdd
+    public class AddCalculator
     {
         /// <summary>
         /// Seperates numbers from string and make sum
