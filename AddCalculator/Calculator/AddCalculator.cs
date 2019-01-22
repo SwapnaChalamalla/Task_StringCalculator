@@ -48,6 +48,7 @@ namespace StringCalculator
                 var lstNumber = new List<int>();
                 string strNum = string.Empty;
 
+                //Gets index of first digit
                 int startIndex = GetIndexOfFirstNumber(numbers);
 
                 if (startIndex >= 0)
@@ -55,7 +56,7 @@ namespace StringCalculator
 
                 int z = 0;
                 string strNumbers = strNum.Replace("\\n", ",");
-                char[] delimiterChars = { ' ', ',', ';', '\n', '@', '#' ,'$'};
+                char[] delimiterChars = { ' ', ',', ';', '\n', '@', '#', '$' };
                 lstNumber = strNumbers.Split(delimiterChars, StringSplitOptions.RemoveEmptyEntries).Where(x => int.TryParse(x, out z))
                     .Select(x => z).ToList();
 
@@ -76,15 +77,22 @@ namespace StringCalculator
         /// <returns></returns>
         public static int GetIndexOfFirstNumber(string numbers)
         {
-            var startIndex = -1;
-            for (int i = 0; i < numbers.Length; i++)
+            try
             {
-                if (startIndex < 0 && Char.IsDigit(numbers[i]))
+                var startIndex = -1;
+                for (int i = 0; i < numbers.Length; i++)
                 {
-                    startIndex = i;
+                    if (startIndex < 0 && Char.IsDigit(numbers[i]))
+                    {
+                        startIndex = i;
+                    }
                 }
+                return startIndex;
             }
-            return startIndex;
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         /// <summary>
