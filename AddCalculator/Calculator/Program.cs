@@ -23,5 +23,6 @@ namespace StringCalculator
                 Console.ReadLine();
             }
         }
+
     }
 }

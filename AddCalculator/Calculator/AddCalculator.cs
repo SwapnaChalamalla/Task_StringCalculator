@@ -29,9 +29,9 @@ namespace StringCalculator
                 }
                 return result;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                throw new Exception("Something went wrong.",ex.InnerException);
+                throw new Exception(ex.Message);
             }
         }
 
@@ -43,19 +43,48 @@ namespace StringCalculator
         /// <returns></returns>
         public static List<int> GetNumbersfromString(string numbers)
         {
-            var lstNumber = new List<int>();
-            string strNum = string.Empty;
+            try
+            {
+                var lstNumber = new List<int>();
+                string strNum = string.Empty;
 
-            //Get the numbers and convert them to list
-            int y = 0;
-            lstNumber = Regex.Split(numbers, @"\D+")
-                .Where(x => int.TryParse(x, out y))
-                .Select(x => y).ToList();
+                int startIndex = GetIndexOfFirstNumber(numbers);
 
-            //Check where numbers are positive or negative
-            ValidateNumbersArePositive(lstNumber);
+                if (startIndex >= 0)
+                    strNum = numbers.Substring(startIndex);
 
-            return lstNumber;
+                int z = 0;
+                string strNumbers = strNum.Replace("\\n", ",");
+                char[] delimiterChars = { ' ', ',', ';', '\n', '@', '#' ,'$'};
+                lstNumber = strNumbers.Split(delimiterChars, StringSplitOptions.RemoveEmptyEntries).Where(x => int.TryParse(x, out z))
+                    .Select(x => z).ToList();
+
+                //Check where numbers are positive or negative
+                ValidateNumbersArePositive(lstNumber);
+                return lstNumber;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+        /// <summary>
+        /// Gets index number of first digit
+        /// </summary>
+        /// <param name="numbers"></param>        
+        /// <returns></returns>
+        public static int GetIndexOfFirstNumber(string numbers)
+        {
+            var startIndex = -1;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (startIndex < 0 && Char.IsDigit(numbers[i]))
+                {
+                    startIndex = i;
+                }
+            }
+            return startIndex;
         }
 
         /// <summary>
@@ -69,6 +98,7 @@ namespace StringCalculator
                 var negativeNumbers = string.Join(",", numbersList.Where(x => x < 0).Select(x => x.ToString()).ToArray());
                 throw new System.Exception("negatives not allowed " + " " + negativeNumbers);
             }
+
         }
     }
 }
