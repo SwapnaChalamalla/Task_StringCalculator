@@ -1,6 +1,6 @@
 ﻿using System;
 //using Microsoft.VisualStudio.TestTools.UnitTesting;
-using StringCalculator;
+using Calculator;
 using NUnit.Framework;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ namespace AddCalculatorTest
     [TestFixture]
     public class AddCalculatorTest
     {
-        AddCalculator objAddCalculator = new AddCalculator();
+        CalculatorForAdd objAddCalculator = new CalculatorForAdd();
 
         [Test]
         [TestCase("", 0)]

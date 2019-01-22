@@ -1,0 +1,5 @@
+E:\GitHub\Task_StringCalculator\AddCalculator\Calculator\bin\Debug\Calculator.exe.config
+E:\GitHub\Task_StringCalculator\AddCalculator\Calculator\bin\Debug\Calculator.exe
+E:\GitHub\Task_StringCalculator\AddCalculator\Calculator\bin\Debug\Calculator.pdb
+E:\GitHub\Task_StringCalculator\AddCalculator\Calculator\obj\Debug\Calculator.exe
+E:\GitHub\Task_StringCalculator\AddCalculator\Calculator\obj\Debug\Calculator.pdb

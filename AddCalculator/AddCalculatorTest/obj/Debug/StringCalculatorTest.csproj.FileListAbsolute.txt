@@ -18,9 +18,9 @@ C:\Users\lenovo\Documents\GitHub\StringCalculator\AddCalculator\AddCalculatorTes
 C:\Users\lenovo\Documents\GitHub\StringCalculator\AddCalculator\AddCalculatorTest\obj\Debug\AddCalculatorTest.pdb
 E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculatorTest\bin\Debug\AddCalculatorTest.dll
 E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculatorTest\bin\Debug\AddCalculatorTest.pdb
-E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculatorTest\bin\Debug\AddCalculator.exe
+E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculatorTest\bin\Debug\Calculator.exe
 E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculatorTest\bin\Debug\nunit.framework.dll
-E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculatorTest\bin\Debug\AddCalculator.pdb
+E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculatorTest\bin\Debug\Calculator.pdb
 E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculatorTest\bin\Debug\nunit.framework.xml
 E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculatorTest\obj\Debug\StringCalculatorTest.csprojResolveAssemblyReference.cache
 E:\GitHub\Task_StringCalculator\AddCalculator\AddCalculatorTest\obj\Debug\AddCalculatorTest.dll
