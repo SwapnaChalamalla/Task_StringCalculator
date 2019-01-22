@@ -11,14 +11,17 @@ namespace StringCalculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter the input");
-            string numbers = Console.ReadLine();
+            while (true)
+            {
+                Console.WriteLine("Please enter the input");
+                string numbers = Console.ReadLine();
 
-            //Create object and invoke the add method
-            int result = new AddCalculator().Add(numbers);
+                //Create object and invoke the add method
+                int result = new AddCalculator().Add(numbers);
 
-            Console.WriteLine("The result is " + " " + result);
-            Console.ReadLine();
+                Console.WriteLine("The result is " + " " + result);
+                Console.ReadLine();
+            }
         }
     }
 }
