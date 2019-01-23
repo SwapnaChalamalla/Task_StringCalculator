@@ -63,7 +63,7 @@ namespace AddCalculatorTest
             catch (Exception e)
             {
                 //Assert
-                Assert.IsTrue(e.Message.Contains("negatives not allowed  -2,-3"));
+                Assert.IsTrue(e.Message.Equals("negatives not allowed: -2,-3"));
             }
         }
     }
