@@ -48,20 +48,15 @@ namespace StringCalculator
                 var lstNumber = new List<int>();
                 string strNum = string.Empty;
 
-                //Gets index of first digit
-                int startIndex = GetIndexOfFirstNumber(numbers);
+                var regexMatch = new Regex(@"\-*\d+");
 
-                if (startIndex >= 0)
-                    strNum = numbers.Substring(startIndex);
-
-                int z = 0;
-                string strNumbers = strNum.Replace("\\n", ",");
-                char[] delimiterChars = { ' ', ',', ';', '\n', '@', '#', '$' };
-                lstNumber = strNumbers.Split(delimiterChars, StringSplitOptions.RemoveEmptyEntries).Where(x => int.TryParse(x, out z))
-                    .Select(x => z).ToList();
+                lstNumber = regexMatch.Matches(numbers).Cast<Match>()
+                    .Select(m => m.Value)
+                    .Select(int.Parse).ToList();
 
                 //Check where numbers are positive or negative
                 ValidateNumbersArePositive(lstNumber);
+
                 return lstNumber;
             }
             catch (Exception ex)
@@ -70,31 +65,7 @@ namespace StringCalculator
             }
 
         }
-        /// <summary>
-        /// Gets index number of first digit
-        /// </summary>
-        /// <param name="numbers"></param>        
-        /// <returns></returns>
-        public static int GetIndexOfFirstNumber(string numbers)
-        {
-            try
-            {
-                var startIndex = -1;
-                for (int i = 0; i < numbers.Length; i++)
-                {
-                    if (startIndex < 0 && Char.IsDigit(numbers[i]))
-                    {
-                        startIndex = i;
-                    }
-                }
-                return startIndex;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-
+       
         /// <summary>
         /// Validates if any negative numbers are present in the list
         /// </summary>

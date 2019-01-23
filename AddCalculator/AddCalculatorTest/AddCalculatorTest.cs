@@ -47,13 +47,13 @@ namespace AddCalculatorTest
             Assert.That(result, Is.EqualTo(expected));
         }
 
-        [Test]       
+        [Test]
         [TestCase("1,-2,-3")]
         public void Test_ValidateNumbers(string numbers)
         {
             try
             {
-                string[] strSeperator = { ",", "\n"};
+                string[] strSeperator = { ",", "\n" };
                 var list = numbers.Split(strSeperator, StringSplitOptions.RemoveEmptyEntries)
                             .Select(int.Parse)
                             .ToList();
@@ -66,18 +66,5 @@ namespace AddCalculatorTest
                 Assert.IsTrue(e.Message.Contains("negatives not allowed  -2,-3"));
             }
         }
-
-        [Test]
-        [TestCase("//;\n1;2;3",4)]
-        [TestCase("1,2,3,4",0)]
-        public void Test_GetIndexOfFirstNumber(string numbers,int expected)
-        {
-            //Act
-            int result = StringCalculator.AddCalculator.GetIndexOfFirstNumber(numbers);
-
-            //Assert
-            Assert.AreEqual(expected, result);
-        }
-   
     }
 }

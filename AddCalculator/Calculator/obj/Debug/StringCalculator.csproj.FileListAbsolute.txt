@@ -3,3 +3,4 @@ E:\GitHub\Task_StringCalculator\AddCalculator\Calculator\bin\Debug\Calculator.ex
 E:\GitHub\Task_StringCalculator\AddCalculator\Calculator\bin\Debug\Calculator.pdb
 E:\GitHub\Task_StringCalculator\AddCalculator\Calculator\obj\Debug\Calculator.exe
 E:\GitHub\Task_StringCalculator\AddCalculator\Calculator\obj\Debug\Calculator.pdb
+E:\GitHub\Task_StringCalculator\AddCalculator\Calculator\obj\Debug\StringCalculator.csprojResolveAssemblyReference.cache
