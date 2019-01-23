@@ -75,7 +75,7 @@ namespace StringCalculator
             if (numbersList.Any(x => x < 0))
             {
                 var negativeNumbers = string.Join(",", numbersList.Where(x => x < 0).Select(x => x.ToString()).ToArray());
-                throw new System.Exception("negatives not allowed " + " " + negativeNumbers);
+                throw new System.Exception("negatives not allowed:" + " " + negativeNumbers);
             }
 
         }
